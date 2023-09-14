@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>로그인페이지</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/index.css">
+</head>
+<body>
+	<div class="container">
+		<div class="login-box">
+			<form id="loginForm">
+				아이디 : <input type="text" id="id" name="id" class="id" placeholder="id를 입력하세요"/>
+				<br>
+				비밀번호 : <input type="password" id="pw" name="pw" class="pw" placeholder="*******">
+				<br>
+				<button type="button" onclick="login()">login</button>
+			</form>
+		</div>
+	</div>
+
+<script src="/js/login.js"></script>
+</body>
+</html>
