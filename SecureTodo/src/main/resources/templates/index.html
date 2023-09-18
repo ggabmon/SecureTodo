@@ -8,17 +8,24 @@
 </head>
 <body>
 	<div class="container">
-		<div class="login-box">
-			<form id="loginForm">
-				아이디 : <input type="text" id="id" name="id" class="id" placeholder="id를 입력하세요"/>
-				<br>
-				비밀번호 : <input type="password" id="pw" name="pw" class="pw" placeholder="*******">
-				<br>
-				<button type="button" onclick="login()">login</button>
-			</form>
-		</div>
+		<form id="loginForm">
+			<div class="loginBox">
+				<div class="boxTitle">
+				TodoList
+				</div>
+				<div class="idPwBox">
+					<div class="idBox"> <input type="text" id="id" name="id" class="id" placeholder="아이디"/></div>
+					<div class="pwBox">
+					 <input type="password" id="pw" name="pw" class="pw" placeholder="비밀번호"/></div>
+				</div>
+				<div class="ButtonBox">
+					<button type="button" onclick="login()">로그인</button>
+					<br>
+					<a href="/signupForm"><button type="button">회원가입</button></a>
+				</div>
+			</div>
+		</form>
 	</div>
-
 <script src="/js/login.js"></script>
 </body>
 </html>

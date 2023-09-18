@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
 
 import com.SecureTodo.app.member.dto.MemberDTO;
 
-@Service
 public interface MemberService {
 	
 	public List<MemberDTO> findAllMember(); 
