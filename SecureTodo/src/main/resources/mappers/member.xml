@@ -22,7 +22,12 @@
 	 
 	<!-- Id를 통한 member 조회 -->
     <select id="selectMemberById" parameterType="int" resultMap="MemberResultMap">
-        SELECT * FROM member WHERE member_id = #{memberId}
+        SELECT * FROM member WHERE username = #{id}
     </select>
 	
+	
+	<!-- Id를 통한 member의 pw 조회 -->
+	<select id="findPwById" parameterType="String" resultType="String">
+		SELECT password FROM member WHERE username = #{id}
+	</select>
 </mapper>

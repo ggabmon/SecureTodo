@@ -13,7 +13,6 @@ public class MemberController {
 	@RequestMapping("/admin")
 	public String adminMember(Model model) {
 		
-		model.addAttribute("MEMBERS", null);
 		return "admin/adminUser";
 	}
 }

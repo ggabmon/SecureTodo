@@ -10,5 +10,7 @@ import com.SecureTodo.app.member.dto.MemberDTO;
 public interface MemberMapper {
 	List<MemberDTO> selectAllMember();
 	
-	MemberDTO selectMemberById(int id);
+	MemberDTO selectMemberById(String id);
+
+	String findPwById(String id);
 }

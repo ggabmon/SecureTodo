@@ -16,8 +16,17 @@ public class MemberServiceImpl implements MemberService {
 	
 	@Override
 	public List<MemberDTO> findAllMember() {
-		System.out.println("서비스 접근");
 		return memberMapper.selectAllMember();
+	}
+
+	@Override
+	public String findPwById(String id) {
+		return memberMapper.findPwById(id);
+	}
+
+	@Override
+	public MemberDTO selectMemberById(String id) {
+		return memberMapper.selectMemberById(id);
 	}
 
 }

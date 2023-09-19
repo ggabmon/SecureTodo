@@ -9,4 +9,8 @@ import com.SecureTodo.app.member.dto.MemberDTO;
 public interface MemberService {
 	
 	public List<MemberDTO> findAllMember(); 
+	
+	public String findPwById(String id);
+	
+	public MemberDTO selectMemberById(String id);
 }

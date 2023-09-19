@@ -19,17 +19,12 @@ public class HomeController {
 	MemberService memberService;
 	
 	/* 회원목록페이지 */
-	@GetMapping("/main")
+	@GetMapping("/todo")
 	public String showTodo(Model model) {
-		System.out.println("showTodo 접근");
 		model.addAttribute("todo", "todo 입니당.");
 		List<MemberDTO> memberList = memberService.findAllMember();
 		model.addAttribute("MemberList", memberList);
-		System.out.println("toString 출력");
-		for(MemberDTO member : memberList) {
-			System.out.println(member);
-		}
-		return "todo";
+		return "todo/list";
 	}
 	
 	/* 회원가입페이지로 */
@@ -37,4 +32,7 @@ public class HomeController {
 	public String signupForm() {
 		return "member/signupForm";
 	}
+
+	
+
 }

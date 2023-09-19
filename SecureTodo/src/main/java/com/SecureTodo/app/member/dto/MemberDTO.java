@@ -15,4 +15,11 @@ public class MemberDTO {
     private int age;
     private int listPublicity;
     private int isWithdrawn;
+    
+    //비밀번호는 지우고나가게 만든 set
+	public void setPassword(String password) {
+		this.password = password;
+	}
+    
+    
 }
